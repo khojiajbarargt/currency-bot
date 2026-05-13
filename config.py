@@ -1,0 +1,4 @@
+import os
+
+BOT_TOKEN = os.getenv("8740461136:AAGpY8trt05sH16u61bcGIPfNRHv321lQBI")
+GROQ_API_KEY = os.getenv("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")
