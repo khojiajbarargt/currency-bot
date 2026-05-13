@@ -1,10 +1,10 @@
+import os
 from groq import AsyncGroq
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
-from config import GROQ_API_KEY
 
-client = AsyncGroq(api_key=GROQ_API_KEY)
+client = AsyncGroq(api_key=os.getenv("GROQ_API_KEY"))
 router = Router()
 chat_histories = {}
 
